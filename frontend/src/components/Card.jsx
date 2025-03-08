@@ -3,27 +3,35 @@ import React from "react";
 export default function Card({ item }) {
   return (
     <>
-      <div className="mt-4 my-6 p-5">
-        <div className="card bg-base-200 w-80 shadow-sm hover:scale-105 duration-200 dark:bg-slate-900 dark:text-white dark:border-1">
-          <figure>
-            <img src={item.image} alt="Shoes" />
-          </figure>
-          <div className="card-body">
-            <div className="flex space-x-2">
-              <h2 className="card-title">{item.name}</h2>
-              <button className="bg-pink-400 rounded-full px-3 text-white py-0">
+      <div className="p-4">
+        <div className="max-w-sm rounded-lg overflow-hidden shadow-lg transform transition duration-300 hover:scale-105 bg-white dark:bg-slate-800">
+          <div className="relative">
+            <img
+              className="w-full h-64 object-cover"
+              src={item.image}
+              alt={item.name}
+            />
+            <div className="absolute top-4 right-4">
+              <span className="bg-pink-500 text-white text-sm font-semibold px-4 py-1 rounded-full">
                 {item.category}
-              </button>
+              </span>
             </div>
-            <p>{item.title}</p>
-            <div className="card-actions flex justify-between">
-              <button className="border-[1px] rounded-full px-2 cursor-pointer hover:bg-pink-400 duration-300">
-                ${item.price}
-              </button>
-              <button className="border-[1px] rounded-full px-2 py-1 cursor-pointer hover:bg-pink-400 duration-300">
-                Buy Now
-              </button>
-            </div>
+          </div>
+          <div className="px-6 py-4">
+            <h2 className="font-bold text-xl mb-2 text-gray-800 dark:text-white">
+              {item.name}
+            </h2>
+            <p className="text-gray-600 dark:text-gray-300 text-base">
+              {item.title}
+            </p>
+          </div>
+          <div className="px-6 py-4 flex justify-between items-center border-t border-gray-200 dark:border-gray-700">
+            <span className="text-xl font-bold text-pink-500">
+              ${item.price}
+            </span>
+            <button className="bg-pink-500 hover:bg-pink-600 text-white font-semibold py-2 px-6 rounded-full transition duration-300 transform hover:-translate-y-0.5">
+              Buy Now
+            </button>
           </div>
         </div>
       </div>

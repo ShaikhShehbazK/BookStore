@@ -21,7 +21,7 @@ export default function Banner() {
               possimus nulla?
             </p>
             {/* <input type="text" placeholder="Email" /> */}
-            <label className="input validator w-full  dark:bg-slate-900 dark:text-white border-white">
+            <label className="input validator w-full dark:bg-slate-900 dark:text-white border-1 dark:border-white">
               <svg
                 className="h-[1em] opacity-50"
                 xmlns="http://www.w3.org/2000/svg"
@@ -48,7 +48,7 @@ export default function Banner() {
         </div>
         {/* Right section*/}
         <div className="w-full md:w-1/2 flex items-center justify-center mt-15">
-          <img className="h-100 w-100" src={banner} alt="" />
+          <img className="h-90 w-98" src={banner} alt="" />
         </div>
       </div>
     </>

@@ -97,7 +97,7 @@ function Navbar() {
                 {navItems}
               </ul>
             </div>
-            <a className="font-bold text-2xl">bookStore</a>
+            <a className="font-bold text-2xl">NovelNest</a>
           </div>
           <div className="navbar-end space-x-3">
             <div className="navbar-center hidden lg:flex">
