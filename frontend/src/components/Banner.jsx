@@ -3,7 +3,10 @@ import banner from "/Banner.png";
 export default function Banner() {
   return (
     <>
-      <div className="max-w-screen-2xl container mx-auto md:px-20 px-4 flex flex-col-reverse md:flex-row my-10">
+      <div
+        className="max-w-screen-2xl container mx-auto md:px-20 px-4 flex flex-col-reverse md:flex-row my-10
+      "
+      >
         {/* Left section*/}
         <div className="w-full md:w-1/2 mt-10 md:mt-30">
           <div className="space-y-10">
@@ -18,7 +21,7 @@ export default function Banner() {
               possimus nulla?
             </p>
             {/* <input type="text" placeholder="Email" /> */}
-            <label className="input validator w-full">
+            <label className="input validator w-full  dark:bg-slate-900 dark:text-white border-white">
               <svg
                 className="h-[1em] opacity-50"
                 xmlns="http://www.w3.org/2000/svg"

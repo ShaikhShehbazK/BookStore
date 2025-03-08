@@ -4,7 +4,7 @@ export default function Card({ item }) {
   return (
     <>
       <div className="mt-4 my-6 p-5">
-        <div className="card bg-base-200 w-80 shadow-sm hover:scale-105 duration-200">
+        <div className="card bg-base-200 w-80 shadow-sm hover:scale-105 duration-200 dark:bg-slate-900 dark:text-white dark:border-1">
           <figure>
             <img src={item.image} alt="Shoes" />
           </figure>
